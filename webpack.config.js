@@ -46,6 +46,10 @@ module.exports = {
         ],
         exclude: /node-modules/,
       },
+      {
+        test: /\.less$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader'],
+      },
     ],
   },
   plugins: [
